@@ -4,7 +4,7 @@
     <title>Document</title>
          <!-- GoogleFonts -->
   
-    <link href="css/style-contactus.css" rel="stylesheet">
+    <link href="css/style-menu.css" rel="stylesheet">
   
 </head>
 <body>
@@ -22,7 +22,6 @@
 <div class="banner-image">
   <div class="banner-text">
     <h1 style="font-size:50px">Dou!</h1>
-    <button>Order Dou!</button>
   </div>
 </div>
 
@@ -50,22 +49,50 @@
     <div class="grid-container-3 section-img">
         <div>
             <img src="images/blank.png"> 
-            Classic Beancurd
+
+            <h5>Classic Beancurd</h5>
             <br>
             Beancurd topped with red beans and taro balls
             <br>
-            Quantity: (settle counter)
-            <butotn>Add to cart</butotn>
+            $4.50
+            <br>
+            Quantity:
+            <button>Add to cart</butotn>
             
         </div>
         <div>
-            <img src="images/blank.png"> reasons
+            <img src="images/blank.png"> 
+
+            <h5>Classic Beancurd</h5>
+            <br>
+            Beancurd topped with red beans and taro balls
+            <br>
+            $2.30
+            <br>
+            Quantity:
+            <button>Add to cart</butotn>
         </div>
         <div>
-            <img src="images/blank.png"> reasons
+            <img src="images/blank.png"> 
+
+            <h5>Classic Beancurd</h5>
+            <br>
+            Beancurd topped with red beans and taro balls
+            <br>
+            $5.60
+            <br>
+            <div class="split-text-form">
+                Quantity
+                <form>
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                    <input type="number" id="number" value="0" />
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                </form>
+            </div>
+            
+            <button>Add to cart</butotn>
         </div>
     </div>
-    <button>Order Dou!</button>
 </div>
 
 <div class="banner-image">
@@ -88,6 +115,9 @@
     </p>
     <p><a href="mailto:hege@example.com">hege@example.com</a></p>
   </footer>
+
+  <!-- Scripts-->
+  <script src="js/productcounter.js"></script>
 
 </body>
 </html>
