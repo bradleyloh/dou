@@ -1,9 +1,9 @@
 <?php
 
-include_once $_SERVER['DOCUMENT_ROOT'] . "/f32ee". '/dou/database.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . "/f32ee". '/DH/database.php';
 
 $httpProtocol = !isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] != 'on' ? 'http' : 'https';
-$base = $httpProtocol . '://' . $_SERVER['HTTP_HOST'] . '/f32ee'.  '/dou/';
+$base = $httpProtocol . '://' . $_SERVER['HTTP_HOST'] . '/f32ee'.  '/DH/';
 
 function active($current_page)
 {

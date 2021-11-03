@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Name</title>
+  <title>Dou! - Cart</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -55,12 +55,13 @@
                 <a href="cart.php?action=remove&product=<?php echo $key; ?>"><span class="material-icons">clear</span></a>
               </div>
 
-              <div class="total">
+            <?php } ?>
+            <div class="total">
                 <div class="label">Total cost</div>
                 <div class="value">$<?php echo number_format($total, 2); ?></div>
               </div>
               <button type="submit" class="secondary large checkout">Check Out</button>
-            <?php }
+              <?php
           } else { ?>
             <p>Your cart is empty</p>
           <?php } ?>
