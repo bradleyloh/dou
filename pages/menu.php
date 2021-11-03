@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Name</title>
+  <title>Dou! - Menu</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,11 +27,13 @@
         } else {
 
           $product_query = "SELECT * FROM products WHERE id=$id";
-          if($product = $conn->query($product_query)) {
-             echo 'product added';
-          } else { 
-            echo $mysqli -> error;
-          }
+          // if($product = $conn->query($product_query)) {
+          //    echo 'product added';
+          // } else { 
+          //   echo $mysqli -> error;
+          // }
+          $product = $conn->query($product_query);
+
           $product_info = $product->fetch_assoc();
 
           $_SESSION['cart'][$id] = array(

@@ -22,7 +22,14 @@ CREATE TABLE `faq` (
 
 LOCK TABLES `faq` WRITE;
 /*!40000 ALTER TABLE `faq` DISABLE KEYS */;
-INSERT INTO `faq` VALUES (1,1,'How can I pay for my food?','edit'),(2,1,'q2','ans'),(3,2,'q3','ans');
+INSERT INTO `faq` VALUES 
+(1,1,'How can I pay for my food?','Dou! accepts a variety of payment methods like Debit/Credit Cards, Cash and even PayPal. Note that Android pay and Alipay are not accepted yet'),
+(2,1,'What are your delivery fees?','Our delivery fees are calculated based on distance between the pick-up and drop-off locations.'),
+(3,1,'How does Cash on Delivery work?','Simply tap on “Payment method” on the checkout page, tap on “Cash”, and complete your order as usual! We know you’re hungry, so do remember to prepare sufficient cash for your order, to avoid any delays.'),
+(4,2,'What are your hours?','Depending on your area and local restaurant hours, we begin delivering as early as 7 am, and run as late as 2 am. If a particular restaurant is not available for delivery, you will see it closed on the app.'),
+(5,2,'Is the store halal certified?','Yes, it is halal certified!'),
+(6,3,'Where do Dou! delivers to?','Currently we do not have any delivery attempt. Will come in the future!');
+
 /*!40000 ALTER TABLE `faq` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -42,7 +49,7 @@ CREATE TABLE `faqTopic` (
 
 LOCK TABLES `faqTopic` WRITE;
 /*!40000 ALTER TABLE `faqTopic` DISABLE KEYS */;
-INSERT INTO `faqTopic` VALUES (1,'Main Topic 1'),(2,'Main Topic 2'),(3,'Main Topic 3');
+INSERT INTO `faqTopic` VALUES (1,'Payment'),(2,'Store'),(3,'Delivery');
 /*!40000 ALTER TABLE `faqTopic` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -146,12 +153,26 @@ CREATE TABLE `products` (
 
 -- ID, Name, Description, Price, Type-ID (1 = beancurd , 2 = soya drinks, 3 = muffins) , Stock, images
 INSERT INTO `products` VALUES 
-(1,'Soy Beancurd','Classic beancurd',1.50,1,10,'beancurd-soy.png'),
-(2,'Almond Beancurd','Beancurd with almond toppings',2.40,1,10,'beancurd-almond.png'),
-(3,'Matcha Beancurd','Beancurd with matcha flavoured recipes',2.40,1,10,'beancurd-matcha.png'),
-(4,'Classic Soymilk','Classic Soymilk',1.50,2,0,'soymilk-1.png'),
-(5,'Almond Soymilk','Matcha Soymilk',2.0,2,0,'soymilk-2.png'),
-(6,'Coconut Soymilk','Coconut Soymilk',2.0,2,0,'soymilk-3.png'),
-(7,'Banana Muffin','Banana Muffin',2.10,3,0,'muffin-banana.png'),
-(8,'Blueberry Muffin','Blueberry is blue',1.50,3,0,'muffin-blueberry.png'),
-(9,'Chocolate Muffin','Fine grains dark chooclate',1.50,3,0,'muffin-chocolate.png');
+(1,'Soy Beancurd','Natural beans',1.50,1,10,'beancurd-soy.png'),
+(2,'Almond Beancurd','Natural beans with Almond',2.40,1,10,'beancurd-almond.png'),
+(3,'Matcha Beancurd','Natural beans with Matcha',2.40,1,10,'beancurd-matcha.png'),
+(4,'Classic Soymilk','Soy bean classic milk',1.50,2,10,'soymilk-1.png'),
+(5,'Almond Soymilk','Soy bean almond milk',2.0,2,10,'soymilk-2.png'),
+(6,'Coconut Soymilk','Soy bean coconut milk',2.0,2,0,'soymilk-3.png'),
+(7,'Banana Muffin','Made with Uganda banana',2.10,3,0,'muffin-banana.png'),
+(8,'Blueberry Muffin','Mixed with fermented beans',1.50,3,10,'muffin-blueberry.png'),
+(9,'Chocolate Muffin','Filled with walnut toppings',1.50,3,0,'muffin-chocolate.png');
+
+/*!40000 ALTER TABLE `products` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-10-31 19:20:42

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Name</title>
+  <title>Dou! - Confirmation</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -41,7 +41,7 @@
 
   <div class="main-content">
     <div class="wrapper">
-      <img src="../src/img/done.svg" alt="done" />
+      <img src="../src/img/done.svg" alt="done" class= "thankyou-image" />
       <p>Thank you!</p>
       <p>Self-collect your order at the counter. <br />
         Your order number is <strong>#<?php echo $order_id; ?></strong></p>
