@@ -6,20 +6,20 @@
       <p>
         6 Butik Batok<br />
         Singapore 12356 <br />
-        <a style="color:#73A580; font-weight:bold" href="https://www.google.com/maps/dir//bukit+batok+tauhuay/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x31da1089dc56361d:0xae00ac5ff6bb4f7c?sa=X&ved=2ahUKEwim18S3ofvzAhXVV30KHUdJD1gQ9Rd6BAgMEAU">Get directions to Dou!</a>
+        <a style="color:#73a580; font-weight:bold" href="https://www.google.com/maps/dir//bukit+batok+tauhuay/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x31da1089dc56361d:0xae00ac5ff6bb4f7c?sa=X&ved=2ahUKEwim18S3ofvzAhXVV30KHUdJD1gQ9Rd6BAgMEAU">Get directions to Dou!</a>
       </p>
 
     </div>
     <div class="social">
       <p>Connect with us</p>
       <ul class="social-list">
-        <li class="social-item"> <a href="#" onclick="event.preventDefault();"><i class="im im-facebook"></i></a></li>
-        <li class="social-item"> <a href="#" onclick="event.preventDefault();"><i class="im im-twitter"></i></a></li>
-        <li class="social-item"> <a href="#" onclick="event.preventDefault();"><i class="im im-instagram"></i></a></li>
+        <li class="social-item"> <a href="https://facebook.com" ><i class="im im-facebook"></i></a></li>
+        <li class="social-item"> <a href="https://twitter.com" ><i class="im im-twitter"></i></a></li>
+        <li class="social-item"> <a href="https://instagram.com" ><i class="im im-instagram"></i></a></li>
       </ul>
     </div>
     <p class="copyright">
-      Privacy notice © 2021 NAME. All Rights Reserved
+      Privacy notice &copy; 2021 bradley_jiazhi@dou.com. All Rights Reserved
     </p>
   </div>
 </footer>

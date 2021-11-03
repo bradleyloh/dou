@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="./src/css/main.css">
+  
+  <link href="src/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 
 <body class="page-index">
