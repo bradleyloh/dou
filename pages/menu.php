@@ -110,7 +110,7 @@
       <?php }
       } ?>
 
-      <button type="button" class="secondary large checkout">Check Out</button>
+      <button onclick="location.href='cart.php'" type="button" class="secondary large checkout">Check Out to Cart</button>
     </div>
   </div>
   <?php require '../components/footer.php' ?>
