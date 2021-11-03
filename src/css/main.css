@@ -1,3 +1,4 @@
+
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
   * {
     animation-duration: 0.001ms !important;
@@ -57,6 +58,7 @@ a {
 a:hover {
   color: rgba(29, 25, 5, 0.8);
 }
+
 
 textarea,
 input {
@@ -269,7 +271,7 @@ header .menu {
 }
 
 footer {
-  padding: 1rem 0;
+  padding: 2rem 0 1rem 0;
   background-color: #fcbb6a;
 }
 footer .logo {
@@ -396,6 +398,8 @@ footer .logo {
   margin-top: -0.5rem;
   background-color: #fee3c3;
   text-align: center;
+  color: #2E2E2E;
+  font-weight: bold;
 }
 
 .promotion-list {
@@ -405,10 +409,11 @@ footer .logo {
 }
 
 .promotion-item img {
-  width: 100%;
+  width: 60%;
   height: auto;
   object-fit: cover;
 }
+
 
 .about {
   position: relative;

@@ -1,12 +1,12 @@
 <footer>
   <div class="wrapper">
     <div class="info">
-      <div class="logo">Logo @ Footer</div>
+      <div class="logo"><img src="<?php echo $base ?>src/img/logo-black.png"></div>
       <p>Daily: 10am - 9pm</p>
       <p>
-        6 Bayfront Avenue <br />
+        6 Butik Batok<br />
         Singapore 12356 <br />
-        Get directions to NAME
+        <a style="color:#73A580; font-weight:bold" href="https://www.google.com/maps/dir//bukit+batok+tauhuay/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x31da1089dc56361d:0xae00ac5ff6bb4f7c?sa=X&ved=2ahUKEwim18S3ofvzAhXVV30KHUdJD1gQ9Rd6BAgMEAU">Get directions to Dou!</a>
       </p>
 
     </div>

@@ -21,44 +21,59 @@
   ?>
   <div class="main-content">
     <div class="banner">
-      <img src="src/img/image20.png" alt="beancurd" />
+      <img src="src/img/home-banner.png" alt="beancurd" />
       <button onclick="location.href='pages/menu.php'" type="button" class="primary large">Browse Menu</button>
     </div>
 
     <div class="promotion">
       <div class="wrapper">
-        <h2>[ words for what we provide eg. non gmo beans, free-delivery, 100% freshness, top quality beans]</h2>
+        <h2>Why DOU?</h2>
         <div class="promotion-list">
-          <?php for ($i = 0; $i < 5; $i++) { ?>
+          
             <div class="promotion-item">
-              <img src="src/img/promo.svg" alt="promotion" />
+              <img src="src/img/icon-flask-black.png" alt="bean" /><h4><br>No Perservative</h4>
             </div>
-          <?php } ?>
+            <div class="promotion-item">
+              <img src="src/img/icon-bean-black.png" alt="promotion" /><h4><br>Non-GMO Beans</h4>
+            </div>
+            <div class="promotion-item">
+              <img src="src/img/icon-leaf-black.png" alt="promotion" /><h4><br>High Nutrition</h4>
+            </div>
+            <div class="promotion-item">
+              <img src="src/img/icon-box-black.png" alt="promotion" /><h4><br>Eco-Packaging</h4>
+            </div>
+            <div class="promotion-item">
+              <img src="src/img/icon-quick-black.png" alt="promotion" /><h4><br>Quick Service</h4>
+            </div>
+            
         </div>
       </div>
     </div>
 
     <div class="menu">
       <div class="wrapper">
-        <h2>CHOOSE YOUR BEAN [show what kind of food we have, eg. beancurd, soymilk, pancake]</h2>
-        <h3>There’s always something for everyone</h3>
+        <h2>Our Products</h2>
+        <h3>There's always something for everyone</h3>
         <div class="product-list">
-          <?php if ($products->num_rows > 0) {
-            while ($product = $products->fetch_assoc()) {
-          ?>
               <div class="product-item">
-                <img src="src/img/products/<?php echo $product['imageFileName']; ?>" alt="<?php echo $product["name"]; ?>" />
-                <div class="product-name"><?php echo $product["name"]; ?></div>
+                <img src="src/img/products/beancurd.png"/>
+                <div class="product-name">Beancurd</div>
               </div>
-          <?php }
-          } ?>
+              <div class="product-item">
+                <img src="src/img/products/soymilk.png" />
+                <div class="product-name">Drink</div>
+              </div>
+              <div class="product-item">
+                <img src="src/img/products/muffin.png" />
+                <div class="product-name">Muffin</div>
+              </div>
         </div>
         <button onclick="location.href='pages/menu.php'" type="button" class="primary large">Browse menu</button>
       </div>
     </div>
 
     <div class="about">
-      <img src="src/img/soybean.jpg" alt="soybean" />
+      <img src="src/img/home-story.png" alt="story" />
       <div class="info">
         <div class="brand-name">
           <h4>DOUHUA BEANCURD</h4>

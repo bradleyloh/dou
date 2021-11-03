@@ -1,9 +1,9 @@
 <?php
 
-include_once $_SERVER['DOCUMENT_ROOT'] . "/f32ee". '/DH/database.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . "/f32ee". '/dou/database.php';
 
 $httpProtocol = !isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] != 'on' ? 'http' : 'https';
-$base = $httpProtocol . '://' . $_SERVER['HTTP_HOST'] . '/f32ee'.  '/DH/';
+$base = $httpProtocol . '://' . $_SERVER['HTTP_HOST'] . '/f32ee'.  '/dou/';
 
 function active($current_page)
 {
@@ -18,14 +18,14 @@ session_start(); ?>
 
 <header>
   <div class="wrapper">
-    <a href="<?php echo $base ?>" class="logo">Logo</a>
+    <a href="<?php echo $base ?>" class="logo"><img src="<?php echo $base ?>/src/img/logo-black.png"></a>
     <div class="menu">
       <div class="menu-toggle">
         <span class="material-icons">menu</span>
       </div>
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item <?php active('about.php'); ?>"><a href="<?php echo $base . 'pages/about.php' ?>">About Us</a></li>
+          <li class="nav-item <?php active('about.php'); ?>"><a href="<?php echo $base . 'pages/about.php' ?>">About</a></li>
           <li class="nav-item <?php active('menu.php'); ?>"><a href="<?php echo $base . 'pages/menu.php' ?>">Menu</a></li>
           <li class="nav-item <?php active('contact.php'); ?>"><a href="<?php echo $base . 'pages/contact.php' ?>">Contact Us</a></li>
         </ul>

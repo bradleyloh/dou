@@ -40,7 +40,7 @@ CREATE TABLE `faq` (
 
 LOCK TABLES `faq` WRITE;
 /*!40000 ALTER TABLE `faq` DISABLE KEYS */;
-INSERT INTO `faq` VALUES (1,1,'How can I pay for my food?','GrabFood accepts a variety of payment methods like Debit / Credit Cards, GrabPay Credits, Cash and even PayPal as indicated by your primary GrabPay payment method in the Grab app.\n\nNote that Android Pay and Alipay are not accepted for GrabFood yet. Cash payments are currently available for orders below $50 only.'),(2,1,'Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,'),(3,2,'Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,'),(4,3,'Lorem ipsum dolor sit amet','Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,');
+INSERT INTO `faq` VALUES (1,1,'How can I pay for my food?','edit'),(2,1,'q2','ans'),(3,2,'q3','ans');
 /*!40000 ALTER TABLE `faq` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -173,7 +173,7 @@ CREATE TABLE `productType` (
 
 LOCK TABLES `productType` WRITE;
 /*!40000 ALTER TABLE `productType` DISABLE KEYS */;
-INSERT INTO `productType` VALUES (1,'Beancurd','Beancurd'),(2,'Drinks','Drinks'),(3,'Muffins','Muffins');
+INSERT INTO `productType` VALUES (1,'Beancurd','Silky and smooth'),(2,'Drinks','Quench your thirst'),(3,'Muffins','Satisfy your cravings');
 /*!40000 ALTER TABLE `productType` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -207,18 +207,15 @@ LOCK TABLES `products` WRITE;
 -- ID, Name, Description, Price, Type-ID (1 = beancurd , 2 = soya drinks, 3 = muffins) , Stock, images
 
 INSERT INTO `products` VALUES 
-(1,'Classic Beancurd','Classic beancurd',1.50,1,10,'beancurd.png'),
+(1,'Soy Beancurd','Classic beancurd',1.50,1,10,'beancurd-soy.png'),
 (2,'Almond Beancurd','Beancurd with almond toppings',2.40,1,10,'beancurd-almond.png'),
-(3,'Pearly Beancurd','Beancurd that is soyed',2.40,1,10,'beancurd-soy.png'),
-(4,'Matcha Beancurd','Beancurd with matcha flavoured recipes',2.40,1,10,'beancurd-matcha.png'),
-(5,'Classic Soymilk','Classic Soymilk',1.50,2,0,'soymilk.png'),
-(6,'Matcha Soymilk','Matcha Soymilk',2.0,2,0,'soymilk-1.png'),
-(7,'Caramel Soymilk','Caramel Soymilk',2.0,2,0,'soymilk-2.png'),
-(8,'Tasteless Soymilk','Tasteless Soymilk',2.0,2,10,'soymilk-3.png')
-(9,'Classic Muffin','Classic Muffin',1.50,3,0,'muffin.png'),
-(10,'Banana Muffin','Banana Muffin',2.10,3,0,'muffin-banana.png'),
-(11,'Blueberry Muffin','Blueberry is blue',1.50,3,0,'muffin-blueberry.png'),
-(12,'Chocolate Muffin','Fine grains dark chooclate',1.50,3,0,'muffin-chocolate.png');
+(3,'Matcha Beancurd','Beancurd with matcha flavoured recipes',2.40,1,10,'beancurd-matcha.png'),
+(4,'Classic Soymilk','Classic Soymilk',1.50,2,0,'soymilk-1.png'),
+(5,'Almond Soymilk','Matcha Soymilk',2.0,2,0,'soymilk-2.png'),
+(6,'Coconut Soymilk','Coconut Soymilk',2.0,2,0,'soymilk-3.png'),
+(7,'Banana Muffin','Banana Muffin',2.10,3,0,'muffin-banana.png'),
+(8,'Blueberry Muffin','Blueberry is blue',1.50,3,0,'muffin-blueberry.png'),
+(9,'Chocolate Muffin','Fine grains dark chooclate',1.50,3,0,'muffin-chocolate.png');
 
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
