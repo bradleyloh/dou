@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="../src/css/main.css">
+    
+  <link href="../src/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 
 <body class="page-contact">
@@ -32,22 +34,22 @@
         <h2>Get in Touch</h2>
         <p>Send us a message</p>
         <form action="contact.php" method="post" class="contact-form">
-          <div class="field-set required">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
+                <div class="field-set required">
+                  <label for="name">Name</label>
+                  <input type="text"  name="name" id="name" placeholder="Enter your name" required />
+                </div>
 
-          <div class="field-set required">
-            <label for="contact">Contact</label>
-            <input type="tel" id="contact" name="contact" required />
-          </div>
+                <div class="field-set required">
+                  <label for="contact">Contact</label>
+                  <input type="tel" id="contact" name="contact" placeholder="Enter your phone number" required />
+                </div>
 
-          <div class="field-set">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="10"></textarea>
-          </div>
+                <div class="field-set required">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="10" placeholder="Enter your enquiry" required></textarea>
+                </div>
 
-          <button type="submit" class="primary">Send email</button>
+                <button type="submit" class="primary">Send email</button>
         </form>
       </div>
     </div>
@@ -95,24 +97,8 @@
 
   <?php require '../components/footer.php' ?>
 </body>
-<script>
-  const items = document.querySelectorAll(".accordion-header");
 
-  function toggleAccordion() {
-    const itemToggle = this.getAttribute('aria-expanded');
+<script type="text/javascript" src="../js/faq.js"></script>
 
-    for (i = 0; i < items.length; i++) {
-      items[i].setAttribute('aria-expanded', 'false');
-      items[i].parentElement.classList.remove("expanded");
-    }
-
-    if (itemToggle == 'false') {
-      this.setAttribute('aria-expanded', 'true');
-      this.parentElement.classList.add("expanded");
-    }
-  }
-
-  items.forEach(item => item.addEventListener('click', toggleAccordion));
-</script>
 
 </html>

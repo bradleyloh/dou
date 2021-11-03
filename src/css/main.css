@@ -428,7 +428,7 @@ footer .logo {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  text-align: center;
+  text-align: justify;
 }
 
 .about .info .brand-name {
@@ -449,7 +449,7 @@ footer .logo {
   .about-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 5rem;
     place-items: center;
     text-align: justify;
     text-justify: inter-word;
@@ -457,13 +457,13 @@ footer .logo {
 }
 
 .about-info {
-  margin: 3rem 0;
+  margin: 3rem 0 6rem 0;
   text-align: justify;
   text-justify: inter-word;
 }
 
 .about-info img {
-  height: 320px;
+  height: 300px;
   width: 100%;
 }
 
@@ -675,7 +675,8 @@ footer .logo {
 
 .order-item {
   display: grid;
-  grid-template-columns: repeat(2, 1fr) auto repeat(3, 1fr) 40px;
+  /* image-space name desc desc qnty item-total remove-icon */
+  grid-template-columns: 100px 100px auto 100px 80px 40px 40px; 
   grid-gap: 1rem;
   align-items: center;
   padding: 1rem;

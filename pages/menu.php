@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="../src/css/main.css">
+    
+  <link href="../src/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 
 <body class="page-menu">
@@ -27,11 +29,6 @@
         } else {
 
           $product_query = "SELECT * FROM products WHERE id=$id";
-          // if($product = $conn->query($product_query)) {
-          //    echo 'product added';
-          // } else { 
-          //   echo $mysqli -> error;
-          // }
           $product = $conn->query($product_query);
 
           $product_info = $product->fetch_assoc();
@@ -67,7 +64,7 @@
         $types->data_seek(0);
         while ($type = $types->fetch_assoc()) {
       ?>
-          <div class="products" id="type<?php echo $type["id"]; ?>">
+          <div id="type<?php echo $type["id"]; ?>">
             <h2><?php echo $type["type"]; ?></h2>
             <h3><?php echo $type["description"]; ?></h3>
 
