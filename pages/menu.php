@@ -25,7 +25,7 @@
         $id = intval($_GET['product']);
 
         if (isset($_SESSION['cart'][$id])) {
-          $_SESSION['cart'][$id]['quantity']++;
+          $_SESSION['cart'][$id]['quantity'] = $_SESSION['cart'][$id]['quantity']+$_POST['qty'] ;
         } else {
 
           $product_query = "SELECT * FROM products WHERE id=$id";
@@ -81,11 +81,21 @@
                       <div class="product-name"><?php echo $product["name"]; ?></div>
                       <p class="product-description"><?php echo $product["description"]; ?></p>
                       <div class="price">$<?php echo $product["price"]; ?></div>
+                      
+                      
+                      
                       <div class="quantity">
                         <label for="qty">Quantity</label>
                         <div class="number-input <?php if ($product['stock'] < 1) echo 'disabled'; ?>">
                           <span class="decrement">-</span>
-                          <input type="number" id="qty" name="qty" value="<?php echo $product['stock'] < 1 ? 0 : 1; ?>" min="1" max="<?php echo $product["stock"]; ?>" <?php if ($product['stock'] < 1) echo 'disabled'; ?> />
+                          
+                          <input readonly type="number" id="qty" name="qty" 
+                          value="<?php echo $product['stock'] < 1 ? 0 : 1; ?>" 
+                          min="1" 
+                          max="<?php echo $product["stock"]-$_SESSION['cart'][$id]['quantity']; ?>" 
+                          <?php if ($product['stock'] < 1) echo 'disabled'; ?>    
+                          />
+
                           <span class="increment">+</span>
                         </div>
                       </div>
@@ -107,51 +117,12 @@
       <?php }
       } ?>
 
-      <button type="button" class="secondary large checkout">Check Out</button>
+      <button   type="button" class="secondary large checkout">Check Out</button>
     </div>
   </div>
   <?php require '../components/footer.php' ?>
 </body>
 
-<script>
-  const numberInputs = document.querySelectorAll(".number-input");
-
-  function numberInput(el) {
-    const input = el.querySelector("input");
-    const dec = el.querySelector(".decrement");
-    const inc = el.querySelector(".increment");
-    const min = input.getAttribute("min") || false;
-    const max = input.getAttribute("max") || false;
-
-    dec.addEventListener("click", decrement);
-    inc.addEventListener("click", increment);
-
-    function decrement() {
-      let value = input.value;
-      value--;
-      if (!min || value >= min) {
-        input.value = value;
-      }
-    }
-
-    function increment() {
-      let value = input.value;
-      value++;
-      if (!max || value <= max) {
-        input.value = value;
-      }
-    }
-  }
-
-  numberInputs.forEach(input => numberInput(input));
-
-  function showToast() {
-    const toast = document.querySelector(".toast");
-    toast.classList.add("show");
-    setTimeout(function() {
-      toast.classList.remove("show")
-    }, 5000);
-  }
-</script>
+<script type="text/javascript" src="../js/menu.js"></script>
 
 </html>

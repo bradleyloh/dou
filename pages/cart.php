@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
   <link rel="stylesheet" href="../src/css/main.css">
+    
+  <link href="../src/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 
 <body class="page-cart">
@@ -49,8 +51,12 @@
                 <div class="product-name"><?php echo $product_info["name"]; ?></div>
                 <p class="product-description"><?php echo $product_info["description"]; ?></p>
                 <div class="price">$<?php echo $item['price']; ?></div>
+                
+    
                 <!-- disabled input as qty update is not handled -->
                 <input disabled type="number" id="qty" name="qty" value="<?php echo $item['quantity']; ?>" min="1" max="<?php echo $product_info["stock"]; ?>" />
+                
+                
                 <div class="subtotal">$<?php echo number_format($subtotal, 2); ?></div>
                 <a href="cart.php?action=remove&product=<?php echo $key; ?>"><span class="material-icons">clear</span></a>
               </div>

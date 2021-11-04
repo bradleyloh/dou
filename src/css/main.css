@@ -329,7 +329,7 @@ footer .logo {
 }
 .toast.show {
   opacity: 1;
-  animation: fade-in 500ms ease-in-out both;
+  animation: fade-in 5000ms ease-in-out both;
 }
 .toast p {
   margin-bottom: 0;
@@ -381,6 +381,7 @@ footer .logo {
   font-weight: 700;
   background-color: rgba(29, 25, 5, 0.75);
   color: #fff;
+
 }
 
 .banner .info button {
@@ -428,7 +429,7 @@ footer .logo {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  text-align: justify;
+  text-align: center;
 }
 
 .about .info .brand-name {
@@ -438,6 +439,7 @@ footer .logo {
   font-weight: 700;
   background-color: rgba(29, 25, 5, 0.75);
   color: #fff;
+  text-align: center;
 }
 
 .about .info button {

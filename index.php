@@ -78,8 +78,8 @@
       <img src="src/img/home-story.png" alt="story" />
       <div class="info">
         <div class="brand-name">
-          <h4>DOUHUA BEANCURD</h4>
-          since 2021
+          <h4>DOUHUA BEANCURD<br>since 2021</h4>
+          
         </div>
         <button onclick="location.href='pages/about.php'" type="button" class="primary large">Hear our story</button>
       </div>
