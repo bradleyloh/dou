@@ -26,7 +26,7 @@
       $subtotal = $item["quantity"] * $item["price"];
       $total += $subtotal;
 
-      $insert_detail = "INSERT INTO order_detail(`orderId`, `productId`, `quantity`, `price`, `subtotal`) VALUES ($order_id, $key, $item[quantity], $item[price], $subtotal)";
+      $insert_detail = "INSERT INTO orderDetail(`orderId`, `productId`, `quantity`, `price`, `subtotal`) VALUES ($order_id, $key, $item[quantity], $item[price], $subtotal)";
       $conn->query($insert_detail);
 
       $update_stock = "UPDATE products SET stock = stock - $item[quantity] WHERE id = $key";
