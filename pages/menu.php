@@ -46,7 +46,14 @@
   <div class="toast">
     <p class="toast-message">Successfully added to cart!</p>
   </div>
-
+  <div class="banner">
+      <img src="../src/img/product-banner.png" alt="soybean" />
+      <div class="info">
+        <div class="brand-name">
+          <h2>DOU</h2><h4>Soy Products</h4>
+        </div>
+      </div>
+    </div>
   <div class="main-content">
     <div class="wrapper">
       <div class="product-type">
