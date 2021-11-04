@@ -1,23 +1,3 @@
-// var qtyObject = document.getElementById("qty");
-// qtyObject.addEventListener("change", checkQty, false);
-
-// function checkQty(event) {
-//     var inputQty = event.currentTarget;
-//     var pos = inputQty.value.search(/^[6-9]$/);
-
-//     if (pos != 0) {
-//         alert("The qty you entered (" + inputQty.value +
-//             ") is not valid. \n");
-//         inputQty.focus();
-//         inputQty.select();
-//         return false;
-//     }
-//     alert("The qty you entered (" + inputQty.value +
-//     ") is not valid. \n");
-// }
-
-
-
 const numberInputs = document.querySelectorAll(".number-input");
 
 function numberInput(el) {

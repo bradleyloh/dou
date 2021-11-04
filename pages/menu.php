@@ -16,6 +16,7 @@
 <body class="page-menu">
 
   <?php require '../components/header.php';
+  session_start();
   $type_query = "SELECT * FROM productType";
   $types = $conn->query($type_query);
 
@@ -78,30 +79,31 @@
                   <div class="product-item">
                     <form method="post" action="menu.php?action=add&product=<?php echo $product['id']; ?>">
                       <img src="../src/img/products/<?php echo $product['imageFileName']; ?>" alt="<?php echo $product["name"]; ?>" />
-                      <div class="product-name"><?php echo $product["name"]; ?></div>
+                      <div style="font-weight:bold;"class="product-name"><?php echo $product["name"]; ?></div>
                       <p class="product-description"><?php echo $product["description"]; ?></p>
                       <div class="price">$<?php echo $product["price"]; ?></div>
                       
-                      
+                      <div class="quantity left">
+                        <label for="qty">Amount Left </label>                
+                          <?php echo $product["stock"]-$_SESSION['cart'][$product['id']]['quantity'] ?>
+                      </div>
                       
                       <div class="quantity">
                         <label for="qty">Quantity</label>
                         <div class="number-input <?php if ($product['stock'] < 1) echo 'disabled'; ?>">
                           <span class="decrement">-</span>
-                          
-                          <input readonly type="number" id="qty" name="qty" 
-                          value="<?php echo $product['stock'] < 1 ? 0 : 1; ?>" 
-                          min="1" 
-                          max="<?php echo $product["stock"]-$_SESSION['cart'][$id]['quantity']; ?>" 
-                          <?php if ($product['stock'] < 1) echo 'disabled'; ?>    
-                          />
-
+                          <input readonly type="number" id="qty" name="qty" value="<?php echo $product['stock'] < 1 ? 0 : 0; ?>"  
+                          min="0" max="<?php echo $product["stock"]-$_SESSION['cart'][$product['id']]['quantity']; ?>" 
+                          <?php if ($product['stock'] < 1) echo 'disabled'; ?>/>
                           <span class="increment">+</span>
                         </div>
                       </div>
-                      <?php if ($product['stock'] > 0) { ?>
+
+                  
+                      
+                      <?php if ($product["stock"]-$_SESSION['cart'][$product['id']]['quantity'] > 0) { ?>
                         <button onclick="showToast()" type="submit" class="primary medium add">Add</button>
-                      <?php } else { ?>
+                        <?php }  else { ?>
                         <button disabled class="primary medium add">Out of Stock</button>
                       <?php } ?>
                     </form>
