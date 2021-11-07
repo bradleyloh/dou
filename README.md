@@ -1,8 +1,8 @@
 # Dou!
-<p align="center" height=50px width=auto>
-<img src="https://github.com/bradleyloh/dou/blob/beautify-DH-JiaZhi/src/img/logo-black.png>
+<p align="center">
+<img width="600" height="200" src="https://github.com/bradleyloh/dou/blob/beautify-DH-JiaZhi/src/img/logo-black.png>
 </p>
-          
+                                   
 Welcome to Dou! Your one-stop webpage to order Dou! delicious food! 
 
 ## Contributors
