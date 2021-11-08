@@ -1,7 +1,7 @@
 <footer>
   <div class="wrapper">
     <div class="info">
-      <div class="logo"><img src="<?php echo $base ?>src/img/logo-black.png"></div>
+      <div class="logo"><img src="<?php echo $base ?>src/img/logo-black.svg"></div>
       <p>Daily: 10am - 9pm</p>
       <p>
         6 Butik Batok<br />

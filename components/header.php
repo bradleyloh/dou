@@ -18,7 +18,7 @@ session_start(); ?>
 
 <header>
   <div class="wrapper">
-    <a href="<?php echo $base ?>" class="logo"><img src="<?php echo $base ?>/src/img/logo-black.png"></a>
+    <a href="<?php echo $base ?>" class="logo"><img src="<?php echo $base ?>/src/img/logo-black.svg"></a>
     <div class="menu">
       <div class="menu-toggle">
         <span class="material-icons">menu</span>
