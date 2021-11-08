@@ -25,7 +25,7 @@ p {
 }
 
 html {
-  font-family: "Quicksand", sans-serif;
+  font-family: sans-serif;
 }
 
 body {
@@ -381,7 +381,6 @@ footer .logo {
   font-weight: 700;
   background-color: rgba(29, 25, 5, 0.75);
   color: #fff;
-
 }
 
 .banner .info button {
@@ -679,7 +678,7 @@ footer .logo {
 .order-item {
   display: grid;
   /* image-space name desc desc qnty item-total remove-icon */
-  grid-template-columns: 100px 100px auto 100px 80px 40px 40px; 
+  grid-template-columns: 100px 100px auto 100px 80px 40px 40px;
   grid-gap: 1rem;
   align-items: center;
   padding: 1rem;
