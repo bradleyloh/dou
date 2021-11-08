@@ -50,7 +50,7 @@
     <div class="menu">
       <div class="wrapper">
         <h2>Our Products</h2>
-        <h3>There's always something for everyone</h3>
+        <p>There's always something for everyone</p>
         <div class="product-list">
               <div class="product-item">
                 <img src="src/img/products/beancurd.png"/>
