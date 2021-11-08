@@ -69,7 +69,7 @@
                 ?>
                     <div class="accordion-item">
                       <div class="accordion-header" aria-expanded="false"><?php echo $faq["question"]; ?> <span class="material-icons">
-                          expand_more
+                      <img src="<?php echo $base ?>/src/img/expand.svg">
                         </span>
                       </div>
                       <div class="accordion-content">
