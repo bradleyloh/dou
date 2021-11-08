@@ -4,13 +4,14 @@ nameObject.addEventListener("change", checkName, false);
 var emailObject = document.getElementById("email");
 emailObject.addEventListener("change", checkEmail, false);
 
+
 function checkName(event) {
 
     var inputName = event.currentTarget;
     var pos = inputName.value.search(/^[^0-9]+$/);
 
     if (pos != 0) {
-        alert("The name you entered (" + inputName.value +
+        alert("Please enter your name (e.g. Alex Lim).\nThe name you entered (" + inputName.value +
             ") is not valid. \n");
         inputName.focus();
         inputName.select();
@@ -30,3 +31,4 @@ function checkEmail(event) {
         return false;
     }
 }
+

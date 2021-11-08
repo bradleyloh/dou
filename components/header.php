@@ -33,8 +33,7 @@ session_start(); ?>
     </div>
     <div class="cart">
       <a href="<?php echo $base . 'pages/cart.php' ?>">
-        <span class="material-icons">shopping_cart</span>
-      </a>
+      <img style="width: 2rem;" src="<?php echo $base ?>/src/img/icon-cart.svg"></a>
     </div>
   </div>
 </header>

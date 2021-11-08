@@ -281,13 +281,16 @@ footer .logo {
   list-style-type: none;
   padding-inline-start: 0;
 }
-.social-list li a {
+.social-list li a{
   display: inline-block;
   padding: 0.5rem;
 }
+
 .copyright {
   width: 100%;
 }
+
+
 
 /* MAIN CONTENT */
 @media only screen and (min-width: 768px) {

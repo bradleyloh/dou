@@ -17,9 +17,6 @@ function toggleAccordion() {
 items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 
-
-
-
 var nameObject = document.getElementById("name");
 nameObject.addEventListener("change", checkName, false);
 
@@ -28,17 +25,18 @@ dateObject.addEventListener("change", checkContact, false);
 
 function checkName(event) {
 
-    var inputName = event.currentTarget;
-    var pos = inputName.value.search(/^[^0-9]+$/);
+  var inputName = event.currentTarget;
+  var pos = inputName.value.search(/^[^0-9]+$/);
 
-    if (pos != 0) {
-        alert("The name you entered (" + inputName.value +
-            ") is not valid. \n");
-        inputName.focus();
-        inputName.select();
-        return false;
-    }
+  if (pos != 0) {
+      alert("Please enter your name (e.g. Alex Lim).\nThe name you entered (" + inputName.value +
+          ") is not valid. \n");
+      inputName.focus();
+      inputName.select();
+      return false;
+  }
 }
+
 
 
 function checkContact(event) {
@@ -46,8 +44,8 @@ function checkContact(event) {
     var pos = inputName.value.search(/^\d{8}$/);
     
     if (pos != 0) {
-        alert("The number you entered (" + inputName.value +
-            ") is not valid. \n");
+        alert("Please enter your 8-digit phone number.\nThe number you entered (" + inputName.value +
+            ") is not valid. \n ");
         inputName.focus();
         inputName.select();
         return false;

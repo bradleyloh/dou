@@ -13,9 +13,9 @@
     <div class="social">
       <p>Connect with us</p>
       <ul class="social-list">
-        <li class="social-item"> <a href="https://facebook.com" ><i class="im im-facebook"></i></a></li>
-        <li class="social-item"> <a href="https://twitter.com" ><i class="im im-twitter"></i></a></li>
-        <li class="social-item"> <a href="https://instagram.com" ><i class="im im-instagram"></i></a></li>
+        <li> <a href="https://facebook.com" ><img style="width: 2rem;" src="<?php echo $base ?>/src/img/icon-fb.png"></a></li>
+        <li> <a href="https://twitter.com" ><img style="width: 2rem;" src="<?php echo $base ?>/src/img/icon-instagram.png"></a></li>
+        <li> <a href="https://instagram.com" ><img style="width: 2rem;" src="<?php echo $base ?>/src/img/icon-twitter.png"></a></li>
       </ul>
     </div>
     <p class="copyright">
