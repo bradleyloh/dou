@@ -354,6 +354,9 @@ footer .logo {
   margin: auto;
 }
 
+  font-weight: bold;
+}
+
 /* BANNER */
 .banner {
   position: relative;
