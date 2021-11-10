@@ -37,9 +37,7 @@
   }
   ?>
 
-  <div class="toast">
-    <p class="toast-message">Successfully added to cart!</p>
-  </div>
+
   <div class="banner">
       <img src="../src/img/product-banner.png" alt="soybean" />
       <div class="info">
@@ -52,6 +50,7 @@
     <div class="wrapper">
       <div class="product-type">
         <h1>Products</h1>
+        <!-- Anchors -->
         <ul class="type-list">
           <?php if ($types->num_rows > 0) {
             while ($type = $types->fetch_assoc()) {
@@ -103,7 +102,7 @@
                   
                       
                       <?php if ($product["stock"]-$_SESSION['cart'][$product['id']]['quantity'] > 0) { ?>
-                        <button onclick="showToast()" type="submit" class="primary medium add">Add</button>
+                        <button  type="submit" class="primary medium add">Add</button>
                         <?php }  else { ?>
                         <button disabled class="primary medium add">Out of Stock</button>
                       <?php } ?>

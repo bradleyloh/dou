@@ -4,8 +4,6 @@ USE f32ee;
 -- Table structure for table `faq`
 --
 DROP TABLE IF EXISTS `faq`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `faq` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `topicId` int(11) DEFAULT NULL,
@@ -14,14 +12,11 @@ CREATE TABLE `faq` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `faq`
 --
 
-LOCK TABLES `faq` WRITE;
-/*!40000 ALTER TABLE `faq` DISABLE KEYS */;
 INSERT INTO `faq` VALUES 
 (1,1,'How can I pay for my food?','Dou! accepts a variety of payment methods like Debit/Credit Cards, Cash and even PayPal. Note that Android pay and Alipay are not accepted yet'),
 (2,1,'What are your delivery fees?','Our delivery fees are calculated based on distance between the pick-up and drop-off locations.'),
@@ -30,8 +25,6 @@ INSERT INTO `faq` VALUES
 (5,2,'Is the store halal certified?','Yes, it is halal certified!'),
 (6,3,'Where do Dou! delivers to?','Currently we do not have any delivery attempt. Will come in the future!');
 
-/*!40000 ALTER TABLE `faq` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `faqTopic`
@@ -46,12 +39,8 @@ CREATE TABLE `faqTopic` (
 --
 -- Dumping data for table `faqTopic`
 --
-
-LOCK TABLES `faqTopic` WRITE;
-/*!40000 ALTER TABLE `faqTopic` DISABLE KEYS */;
 INSERT INTO `faqTopic` VALUES (1,'Payment'),(2,'Store'),(3,'Delivery');
-/*!40000 ALTER TABLE `faqTopic` ENABLE KEYS */;
-UNLOCK TABLES;
+
 
 --
 -- Table structure for table `message`
@@ -71,7 +60,7 @@ CREATE TABLE `message` (
 -- Dumping data for table `message`
 --
 
-INSERT INTO `message` VALUES (1,'a','a','a'),(2,'test','test','test');
+-- INSERT INTO `message` VALUES (1,'a','a','a'),(2,'test','test','test');
 
 --
 -- Table structure for table `orderDetail`
