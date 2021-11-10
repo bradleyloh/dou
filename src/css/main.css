@@ -354,7 +354,10 @@ footer .logo {
   margin: auto;
 }
 
+.menu .wrapper .product-list .product-item .product-name{
+  text-align: center;
   font-weight: bold;
+  padding: 0.5rem;
 }
 
 /* BANNER */
