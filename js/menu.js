@@ -29,10 +29,3 @@ function numberInput(el) {
 
 numberInputs.forEach(input => numberInput(input));
 
-function showToast() {
-  const toast = document.querySelector(".toast");
-  toast.classList.add("show");
-  setTimeout(function() {
-    toast.classList.remove("show");
-  }, 5000);
-}

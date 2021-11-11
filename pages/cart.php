@@ -47,7 +47,7 @@
                 <div class="price">$<?php echo $item['price']; ?></div>
                 
     
-                <!-- disabled input as qty update is not handled -->
+              
                 <input disabled type="number" id="qty" name="qty" value="<?php echo $item['quantity']; ?>" min="1" max="<?php echo $product_info["stock"]; ?>" />
                 
                 

@@ -39,8 +39,12 @@
       array_push($stack,$message_product);
       
     }
+    $update = "UPDATE orders SET total=$total WHERE id=$order_id";
+    $conn->query($update);
 
-    $total_message = "\r\n" . "The total cost: $" . $total;
+
+    // email
+    $total_message = "\r\n" . "The total cost: $" . number_format((float)$total, 2, '.', '');
     array_push($stack,$total_message);
     foreach ($stack as $key => $value) {
       $message = $message . $value;
@@ -49,14 +53,12 @@
 
     $to      = 'f32ee@localhost';
     $subject = 'Hi ' . $_POST['name'] . '! '. 'Dou! - View your confirmation order!';
-    $headers = 'From: '. 'Dou@f32ee.com' . "\r\n" .
-    'Reply-To: '. $_POST['email'] . "\r\n" .
+    $headers = 'From: '. 'bradley_jiazhi@dou.com' . "\r\n" .
+    'Reply-To: bradley_jiazhi@dou.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
     mail($to, $subject, $message, $headers,'-ff32ee@localhost');
 
-    $update = "UPDATE orders SET total=$total WHERE id=$order_id";
-    $conn->query($update);
-
+    // clear cart
     unset($_SESSION["cart"]);
   }
   ?>
